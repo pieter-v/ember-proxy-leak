@@ -1,5 +1,8 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
-
-{{outlet}}
+<div>PopulateCount: {{populateCount}}</div>
+<div>CearCount: {{clearCount}}</div>
+<p/>
+<button {{action "run"}}>{{clickMessage}}</button>
+<p/>
+{{#each proxyObjects as |object|}}
+  <div>{{object.name}}-{{object.proxyName}}</div>
+{{/each}}
